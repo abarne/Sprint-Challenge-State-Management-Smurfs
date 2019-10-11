@@ -41,11 +41,13 @@ class AddSmurf extends React.Component {
 		axios.post(`http://localhost:3333/smurfs`, smurf).then((res) => {
 			console.log(res);
 		});
+		window.location.reload();
 	};
 
 	render() {
 		return (
 			<div>
+				<h1>Add a new Smurf!</h1>
 				<form onSubmit={this.handleSubmit}>
 					<label>
 						Smurf Name:

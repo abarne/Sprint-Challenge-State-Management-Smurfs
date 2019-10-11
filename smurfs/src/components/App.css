@@ -1,15 +1,28 @@
 .App {
-	text-align: center;
-	background: black;
-	color: white;
 	min-height: 100vh;
+	text-align: center;
+	background-image: url('../images/the_smurfs_2_2013-wallpaper-1920x1080.jpg');
+	background-position: right;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 .smurfs {
 	display: flex;
-	justify-content: space-between;
+	flex-wrap: wrap;
 }
 
 .smurf {
+	background-color: rgba(137, 201, 236, 0.2);
 	border: 1px solid red;
+	width: 400px;
+	height: 400px;
+	padding-top: 150px;
+	margin: 30px;
+}
+
+.container {
+	margin-top: 70px;
+	width: 80%;
+	margin: 0 auto;
 }

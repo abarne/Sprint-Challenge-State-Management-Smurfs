@@ -14,7 +14,7 @@ const Smurfs = (props) => {
 
 	return (
 		<div>
-			<h1>Hello from smurfs component</h1>
+			<h1>Smurfs...</h1>
 			<div className="smurfs">{props.smurfs.map((smurf) => <Smurf key={smurf.id} smurf={smurf} />)}</div>
 		</div>
 	);
