@@ -14,3 +14,9 @@ export const fetchSmurfs = () => (dispatch) => {
 		.then((res) => dispatch({ type: FETCH_SUCCESS, payload: res.data }))
 		.catch((err) => dispatch({ type: FETCH_FAILURE, payload: err.response }));
 };
+
+// export const postSmurfs = () => (dispatch) => {
+//     dispatch({type: START_POSTING});
+//     axios
+//         .post(`http://localhost:3333/smurfs`)
+// }
