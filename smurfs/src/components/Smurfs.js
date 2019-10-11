@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { fetchSmurfs } from '../actions';
+import Smurf from './Smurf';
 
 const Smurfs = (props) => {
 	useEffect(() => {
@@ -14,6 +15,7 @@ const Smurfs = (props) => {
 	return (
 		<div>
 			<h1>Hello from smurfs component</h1>
+			{props.smurfs.map((smurf) => <Smurf key={smurf.id} smurf={smurf} />)}
 		</div>
 	);
 };
